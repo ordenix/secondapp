@@ -8,6 +8,7 @@ import androidx.room.PrimaryKey
 data class ItemToDo (
     @PrimaryKey(autoGenerate = true) val id: Int,
     @ColumnInfo(name = "name") val name: String,
-    @ColumnInfo(name = "description") val description: String
+    @ColumnInfo(name = "description") val description: String,
+    @ColumnInfo(name = "status") var status: Boolean
         ){
 }

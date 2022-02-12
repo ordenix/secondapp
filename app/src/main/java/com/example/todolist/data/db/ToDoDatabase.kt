@@ -8,7 +8,7 @@ import com.example.todolist.data.ItemToDo
 
 @Database(
     entities = [ItemToDo::class],
-    version = 1 //
+    version = 3 //
 )
 abstract class ToDoDatabase: RoomDatabase() {
     abstract fun getItemDAO(): ItemDAO

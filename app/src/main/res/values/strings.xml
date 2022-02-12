@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">ToDoList</string>
+    <string name="task_check">Gotowe</string>
+    <string name="task_delete">Usuń</string>
+    <string name="name">Nazwa</string>
+    <string name="description">Opis</string>
+    <string name="task_add">Dodaj</string>
+    <string name="add_item_desc">Dodaj nowe zadanie</string>
+    <string name="name_desc">Wprowadź nazwę</string>
+    <string name="description_desc">Wprowadź szczegółowy opis</string>
+    <string name="title_activity_add_item">AddItemActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
