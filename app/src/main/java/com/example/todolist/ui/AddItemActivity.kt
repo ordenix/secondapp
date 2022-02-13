@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.todolist.R
+import com.example.todolist.ToDoApplication
 import com.example.todolist.data.ItemToDo
 import com.example.todolist.data.db.ToDoDatabase
 import com.example.todolist.data.repo.ToDoRepository
@@ -22,10 +23,7 @@ class AddItemActivity : AppCompatActivity() {
 
     fun onClick(view: View) {
 
-        val database = ToDoDatabase(this)
-        val repository = ToDoRepository(database)
-        val factory = ToDoLstViewModelFactory(repository)
-        val viewModel = ViewModelProvider(this, factory)[ToDoLstViewModel::class.java]
+        val viewModel = ViewModelProvider(this, (application as ToDoApplication).factory)[ToDoLstViewModel::class.java]
 
         val name = findViewById<EditText>(R.id.editName).text.toString()
         val description = findViewById<EditText>(R.id.editDescription).text.toString()

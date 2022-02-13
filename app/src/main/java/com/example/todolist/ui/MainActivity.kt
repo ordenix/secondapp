@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.todolist.R
+import com.example.todolist.ToDoApplication
 import com.example.todolist.data.db.ToDoDatabase
 import com.example.todolist.data.repo.ToDoRepository
 import com.example.todolist.other.ToDoItemAdapter
@@ -18,11 +19,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val database = ToDoDatabase( this)
-        val repository = ToDoRepository(database)
-        val factory = ToDoLstViewModelFactory(repository)
+        //val database = ToDoDatabase( this)
+        //val repository = ToDoRepository(database)
+        //val factory = ToDoLstViewModelFactory(repository)
 
-        val viewModel = ViewModelProvider(this, factory)[ToDoLstViewModel::class.java]
+        val viewModel = ViewModelProvider(this, (application as ToDoApplication).factory)[ToDoLstViewModel::class.java]
 
         val adapter = ToDoItemAdapter(listOf(), viewModel)
 
