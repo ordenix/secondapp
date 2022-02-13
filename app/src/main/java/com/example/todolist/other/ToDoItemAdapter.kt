@@ -1,11 +1,14 @@
 package com.example.todolist.other
 
 
+import android.content.Context
+import android.provider.Settings.Global.getString
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.example.todolist.R
 import com.example.todolist.data.ItemToDo
@@ -32,7 +35,7 @@ class ToDoItemAdapter (
         holder.description.text = currentItem.description
 
         if (currentItem.status) {
-            holder.status.text = "Gotowe!"
+            holder.status.text = "Zrobione"
         } else holder.status.text = "Nie gotowe!!!"
 
         holder.buttonDelete.setOnClickListener() {
