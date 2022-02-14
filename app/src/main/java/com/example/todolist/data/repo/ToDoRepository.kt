@@ -9,6 +9,7 @@ class ToDoRepository(
     private val database: ToDoDatabase
 ) {
     val all_data: Flow<List<ItemToDo>> = database.getItemDAO().getAllItemToDo()
+
     suspend fun update(item: ItemToDo) = database.getItemDAO().update(item)
 
     suspend fun delete(item: ItemToDo) = database.getItemDAO().DELETE(item)

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">ToDoList</string>
-    <string name="task_check">Gotowe</string>
+    <string name="task_check">Zmień ststus</string>
     <string name="task_delete">Usuń</string>
     <string name="name">Nazwa</string>
     <string name="description">Opis</string>
@@ -18,4 +18,11 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="status_false">Nie gotowe!!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="list">Lista zadań</string>
+    <string name="about">O aplikacji</string>
+    <string name="add_task">Dodaj zadanie</string>
+    <string name="about_desc">"Aplikacja ToDoList jest aplikacją w której można dodawać zadania do zrobienia\n "</string>
+    <string name="emptyList">Lista zadań jest pusta dodaj zadanie</string>
 </resources>

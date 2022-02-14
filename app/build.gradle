@@ -73,4 +73,9 @@ dependencies {
     // Kodein
     implementation "org.kodein.di:kodein-di-generic-jvm:$kodein_version"
     implementation "org.kodein.di:kodein-di-framework-android-x:$kodein_version"
+
+
+    // framgents
+    def fragment_version = "1.4.1"
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
 }
